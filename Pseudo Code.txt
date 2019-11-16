@@ -1,0 +1,29 @@
+Load the dataset
+Define x and y values
+
+Create 3 empty lists:
+one for the distances from the centroid
+one for socres
+one for centroids
+
+for i between 1 and 20:
+    find 3 clusters:
+        identify 3 random centroids
+        for each point in the dataset, calculate the distance between that point and the centroid
+        create 3 clusters of the points closest to the random centroids
+        calculate a new centroid that is the mean of each cluster
+        repeat this until the mean/centroid doesn't change
+    repeat this i times
+    
+    Append the inertia (standard deviation of each point from centroid) to the empty list distance_from_centroid
+    Append the centroids to the empty list centroids
+    Define y_pred which is the predicted cluster for each point based on the above clustering mechanism
+    Calculate the ARI score (by comparing the actual y vs the y_pred) and append the ARI score to the empty list scores
+            
+    index = go through the distance_from_centroid list and find the index at the smallest value 
+    (This gives us the ideal i, where the standard deviation from the centroid is the smallest)
+    print the ideal i
+    print the centroids at the ideal i
+    print the mean distance of each point from the centroid at the ideal i
+    print the score at ideal i 
+       
