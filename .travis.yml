@@ -6,4 +6,4 @@ python:
  - 3.7
 
 script:
- - python3 w8clara.py
+ - python3 w9clara.py
